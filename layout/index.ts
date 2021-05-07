@@ -1,12 +1,8 @@
-import mainTabIcon from "./MainTabIcon";
-import tabIcon from "./TabIcon";
-import tabsContainer from "./TabsContainer";
+import tabs from "./Tabs";
+import home from "./Home";
 
 export default  {
-    tabs: {
-        mainTabIcon,
-        tabIcon,
-        tabsContainer
-    }
+    tabs,
+    home
 }
 

@@ -1,4 +1,4 @@
-import Home from "./Home";
+import Home from "./Home/Home";
 import Explore from "./Explore";
 import Settings from "./Settings";
 import Search from "./Search";

@@ -6,7 +6,6 @@ import {
     HomeTabIcon,
     SearchTabIcon,
     SettingsTabIcon,
-    MainTabIcon
 } from "./TabIcons";
 import {
     Home,
@@ -15,6 +14,7 @@ import {
     Search,
     Settings 
 } from "../../screens";
+import ExploreTabIcon from "./ExploreTabIcon";
 
 const Tabs = () =>{
     return (
@@ -44,8 +44,8 @@ const Tabs = () =>{
                 name="Explore" 
                 component={Explore} 
                 options={{
-                    tabBarIcon: () =>
-                        <MainTabIcon />
+                    tabBarIcon: ({ focused }) =>
+                        <ExploreTabIcon focused={focused} />
                 }}
             />
             <Tab.Screen 
