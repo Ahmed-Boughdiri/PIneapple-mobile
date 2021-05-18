@@ -15,6 +15,7 @@ const styles = StyleSheet.create({
     },
     feed: {
         marginHorizontal: 12,
+        paddingTop: 10,
     },
 });
 

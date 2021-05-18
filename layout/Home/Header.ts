@@ -1,16 +1,17 @@
 import { StyleSheet } from "react-native";
 import { width } from "../../global/Dimensions";
+import theme from "../../theme";
 
 const styles = StyleSheet.create({
     headerContainer: {
         width,
-        paddingTop: 58,
+        paddingTop: 10,
         paddingBottom: 16,
-        backgroundColor: "#fff",
+        backgroundColor: theme.colors.dark,
         alignItems: "center",
         justifyContent: "center",
         elevation: 8,
-        shadowColor: "#454D65",
+        shadowColor: theme.colors.shadowColor,
         shadowOffset: {
             width: 0,
             height: 4,
@@ -22,7 +23,8 @@ const styles = StyleSheet.create({
     headerTitle: {
         textAlign: "center",
         fontSize: 20,
-        fontWeight: "700"
+        fontWeight: "700",
+        color: theme.colors.white
     },
 });
 

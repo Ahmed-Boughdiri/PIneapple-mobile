@@ -3,10 +3,10 @@ import {
     View, 
     FlatList,
 } from "react-native";
-import Post from "./Post";
 import { data } from "../../global/Home";
 import Header from "./Header";
 import styles from "../../layout";
+import Card from "../../components/Cards";
 
 const Home = () =>{
     return (
@@ -18,7 +18,8 @@ const Home = () =>{
                 keyExtractor={item =>item.index + ""}
                 showsVerticalScrollIndicator={false}
                 renderItem={({ item }) =>(
-                    <Post 
+                    <Card
+                        type="home" 
                         authorThumbnail={item.authorThumbnail} 
                         authorName={item.authorName}
                         releaseDate={item.releaseDate}

@@ -1,50 +1,52 @@
 import React from "react";
-import { 
-    Image, 
-    ImageStyle, 
-    StyleProp 
+import Default from "./Default";
+import {
+    StyleProp,
+    ImageStyle
 } from "react-native";
+import CardIcon from "./CardIcon";
 
-const Icon:React.FC<{
+const Index:React.FC<{
+    type: "default" | "card-icon",
     icon: any,
     size?: Number,
     height?: Number,
     width?: Number,
     color?: String,
-    style?: StyleProp<ImageStyle>
+    style?: StyleProp<ImageStyle>,
+    label?: String
 }> = ({
+    type,
     icon,
-    size,
+    color,
     height,
+    style,
     width,
-    color="#000",
-    style
-}) =>{
-    let iconDimensions;
-    if(size)
-        iconDimensions = {
-            height: size,
-            width: size
+    size,
+    label=""
+}) =>(
+    <>
+        {
+            (type === "default") && (
+                <Default 
+                    icon={icon}
+                    color={color}
+                    height={height}
+                    width={width}
+                    size={size}
+                    style={style}
+                />
+            )
         }
-    else
-        iconDimensions = {
-            height,
-            width
+        {
+            (type === "card-icon") && (
+                <CardIcon 
+                    icon={icon}
+                    label={label}
+                />
+            )
         }
-    return (
-        <Image 
-            source={icon}
-            height={24}
-            width={24}
-            style={{
-                height: iconDimensions.height as number,
-                width: iconDimensions.width as number,
-                tintColor: color,
-                ...style as StyleProp<any>
-            }}
-        />
-    );
-}
+    </>
+);
 
-export default Icon;
-
+export default Index;
