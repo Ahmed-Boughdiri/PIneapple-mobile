@@ -10,7 +10,8 @@ export const data = [
         comments: 1540,
         thumbnail: "https://i.ytimg.com/vi/7iSJbEUuRnE/maxresdefault.jpg",
         index: 0,
-        description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+        description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+        views: "2,421,444"
     },
     {
         authorName: "Algerino",
@@ -22,7 +23,8 @@ export const data = [
         comments: 1540,
         thumbnail: "https://i.ytimg.com/vi/Fvw4vOXyBPU/maxresdefault.jpg",
         index: 1,
-        description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+        description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+        views: "3,540,121"
     },
     {
         authorName: "Soolking",
@@ -34,7 +36,8 @@ export const data = [
         comments: 1540,
         thumbnail: "https://i.ytimg.com/vi/YLIWleB0g78/maxresdefault.jpg",
         index: 2,
-        description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+        description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+        views: "421,444"
     },
     {
         authorName: "L'artiste",
@@ -46,7 +49,8 @@ export const data = [
         comments: 1540,
         thumbnail: "https://static.hotmixradio.fr/wp-content/uploads/LARTISTE-Mafiosa.jpg",
         index: 3,
-        description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+        description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+        views: "6,421,200"
     },
     {
         authorName: "Tones And I",
@@ -55,7 +59,8 @@ export const data = [
         title: "Mafiosa",
         thumbnail: "https://i.ytimg.com/vi/q0hyYWKXF0Q/maxresdefault.jpg",
         index: 4,
-        description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+        description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+        views: "1,124,101"
     },
 ]
 

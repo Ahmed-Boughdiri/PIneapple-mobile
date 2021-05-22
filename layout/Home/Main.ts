@@ -1,5 +1,6 @@
 import { StyleSheet } from "react-native";
 import { height, width } from "../../global/Dimensions";
+import theme from "../../theme";
 
 const styles = StyleSheet.create({
     container: {
@@ -8,7 +9,7 @@ const styles = StyleSheet.create({
         flex: 1,
         alignItems: "center",
         justifyContent: "center",
-        backgroundColor: "#d8d5db",
+        backgroundColor: theme.colors.bgColor,
         position: "absolute",
         top: 0,
         left: 0,
