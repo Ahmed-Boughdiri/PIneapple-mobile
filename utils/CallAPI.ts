@@ -18,7 +18,7 @@ function getCallMethod(method: Methods) {
 }
 
 interface ReturnProps {
-    data: unknown | null,
+    data: any | null,
     error: String | null
 }
 

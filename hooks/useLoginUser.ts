@@ -33,7 +33,8 @@ const useLoginUser = (
             return setLoginError(error as string);
         const saveError = await saveUserData({
             email,
-            password
+            username: data.username,
+            token: data.token
         });
         if(saveError)
             return setLoginError(saveError as string);

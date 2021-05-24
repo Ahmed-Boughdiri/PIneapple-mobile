@@ -8,11 +8,12 @@ import theme from "../../theme";
 import { 
     Input, 
     Button,
-    Alert
+    Alert,
+    Loader
 } from "../../components";
 import { width } from "../../global/Dimensions";
 import { useNavigation } from "@react-navigation/native";
-import { useLoginUser } from "../../hooks";
+import { useLoginUser, useCheckUserLogged } from "../../hooks";
 import styles from "../../layout";
 
 const Login = () =>{
@@ -23,13 +24,14 @@ const Login = () =>{
         email,
         password
     );
+    const { loginError, showLoader } = useCheckUserLogged();
     return (
         <View style={styles.login.main.container}>
             {
-                error ? (
+                (error || loginError) ? (
                     <Alert 
                         type="default"
-                        title={error}
+                        title={error ? error : loginError}
                         styles={{
                             width: width * 0.8,
                             marginBottom: 20
@@ -81,8 +83,10 @@ const Login = () =>{
                         </Text>
                     </TouchableOpacity>
                 </View>
-                
             </View>
+            {
+                showLoader && <Loader type="default" />
+            }
         </View>
     );
 }

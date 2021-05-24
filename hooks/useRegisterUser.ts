@@ -37,10 +37,9 @@ const useRegisterUser = (
         if(error)
             return setRegisterError(error as string);
         const saveError = await saveUserData({
-            username,
+            username: data.username,
             email,
-            password,
-            confirmPassword
+            token: data.error
         });
         if(saveError)
             return setRegisterError(saveError as string);

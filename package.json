@@ -22,6 +22,7 @@
     "react-native": "https://github.com/expo/react-native/archive/sdk-39.0.4.tar.gz",
     "react-native-deck-swiper": "^2.0.5",
     "react-native-elements": "^3.4.1",
+    "react-native-indicators": "^0.17.0",
     "react-native-joi": "^0.0.5",
     "react-native-web": "~0.13.12",
     "react-redux": "^7.2.4",
@@ -32,6 +33,7 @@
     "@babel/core": "^7.9.0",
     "@types/react": "~16.9.35",
     "@types/react-native": "~0.63.2",
+    "@types/react-native-indicators": "^0.16.0",
     "@types/react-native-joi": "*",
     "typescript": "~4.0.0"
   },
