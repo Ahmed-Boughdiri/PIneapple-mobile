@@ -1,21 +1,25 @@
 import React from "react";
 import Default from "./Default";
+import {
+    StyleProp,
+    ViewStyle
+} from "react-native";
 
 const Index:React.FC<{
     type: "default",
-    title: String,
-    onPress: () => void
+    styles?: StyleProp<ViewStyle>,
+    title: String
 }> = ({
     type,
-    title,
-    onPress
+    styles,
+    title
 }) =>(
     <>
         {
             (type === "default") && (
                 <Default 
                     title={title}
-                    onPress={onPress}
+                    componentStyles={styles}
                 />
             )
         }

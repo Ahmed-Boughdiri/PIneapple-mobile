@@ -14,5 +14,6 @@ export default {
     super_liked: require("../../assets/icons/super_liked.png"),
     more_vertical: require("../../assets/icons/more_vertical.png"),
     email: require("../../assets/icons/email.png"),
-    password: require("../../assets/icons/password.png")
+    password: require("../../assets/icons/password.png"),
+    user: require("../../assets/icons/user.png")
 }

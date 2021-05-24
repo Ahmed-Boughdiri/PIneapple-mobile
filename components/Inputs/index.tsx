@@ -8,7 +8,11 @@ const Index:React.FC<{
     iconSize?: Number,
     height?: Number,
     width?: Number,
-    spacing?: Number
+    spacing?: Number,
+    value: any,
+    handleChnage: 
+        (value: String) => void,
+    secureText?: Boolean
 }> = ({
     type,
     placeholder="",
@@ -16,7 +20,10 @@ const Index:React.FC<{
     iconSize,
     height,
     width,
-    spacing
+    spacing,
+    value,
+    handleChnage,
+    secureText=false
 }) =>(
     <>
         {
@@ -28,6 +35,9 @@ const Index:React.FC<{
                     height={height}
                     width={width}
                     spacing={spacing}
+                    value={value}
+                    handleChange={handleChnage}
+                    secureText={secureText}
                 />
             )
         }

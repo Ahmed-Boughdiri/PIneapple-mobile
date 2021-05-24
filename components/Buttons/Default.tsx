@@ -8,12 +8,15 @@ import theme from "../../theme";
 
 const Default:React.FC<{
     title: String,
+    onPress: () => void
 }> = ({
-    title
+    title,
+    onPress
 }) =>(
     <TouchableOpacity 
         onPress={() => console.log("")}
         style={styles.container}
+        onPressIn={onPress}
     >
         <Text style={styles.btnTitle}>
             {title}
@@ -27,7 +30,7 @@ const styles = StyleSheet.create({
         width: "100%",
         alignItems: "center",
         justifyContent: "center",
-        backgroundColor: theme.colors.btnColor,
+        backgroundColor: theme.colors.primary,
         borderRadius: 5
     },
     btnTitle: {

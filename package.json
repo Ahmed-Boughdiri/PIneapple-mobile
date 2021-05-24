@@ -8,9 +8,11 @@
     "eject": "expo eject"
   },
   "dependencies": {
+    "@react-native-async-storage/async-storage": "^1.13.0",
     "@react-navigation/bottom-tabs": "^5.11.10",
     "@react-navigation/native": "^5.9.4",
     "@react-navigation/stack": "^5.14.5",
+    "axios": "^0.21.1",
     "expo": "~41.0.1",
     "expo-av": "~9.1.2",
     "expo-font": "~9.1.0",
@@ -20,12 +22,17 @@
     "react-native": "https://github.com/expo/react-native/archive/sdk-39.0.4.tar.gz",
     "react-native-deck-swiper": "^2.0.5",
     "react-native-elements": "^3.4.1",
-    "react-native-web": "~0.13.12"
+    "react-native-joi": "^0.0.5",
+    "react-native-web": "~0.13.12",
+    "react-redux": "^7.2.4",
+    "redux": "^4.1.0",
+    "text-encoding": "^0.7.0"
   },
   "devDependencies": {
     "@babel/core": "^7.9.0",
     "@types/react": "~16.9.35",
     "@types/react-native": "~0.63.2",
+    "@types/react-native-joi": "*",
     "typescript": "~4.0.0"
   },
   "private": true,
